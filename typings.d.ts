@@ -10,7 +10,7 @@ interface Current {
   }
 
 
-  interface CurrentUnits {
+interface CurrentUnits {
   interval: string;
   is_day: string;
   relative_humidity_2m: string;
