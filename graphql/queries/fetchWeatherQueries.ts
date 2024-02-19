@@ -1,17 +1,14 @@
-import { gql } from '@apollo/client';
-
-
+import {gql} from "@apollo/client";
 
 const fetchWeatherQuery = gql`
   query MyQuery(
-    $current: String
+    $current: String = "temperature_2m,is_day,weather_code,wind_speed_10m,wind_direction_10m"
     $daily: String = "weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,uv_index_max,uv_index_clear_sky_max"
     $hourly: String = "temperature_2m,relative_humidity_2m,apparent_temperature,precipitation_probability,precipitation,rain,showers,snowfall,snow_depth,wind_gusts_10m,uv_index,uv_index_clear_sky"
     $latitude: String!
     $longitude: String!
     $timezone: String!
-
-  ) {
+  )   {
     myQuery(
       current: $current
       daily: $daily
@@ -23,7 +20,6 @@ const fetchWeatherQuery = gql`
       current {
         interval
         is_day
-        relative_humidity_2m
         temperature_2m
         time
         weather_code
@@ -33,7 +29,6 @@ const fetchWeatherQuery = gql`
       current_units {
         interval
         is_day
-        relative_humidity_2m
         temperature_2m
         time
         weather_code
@@ -64,12 +59,8 @@ const fetchWeatherQuery = gql`
         uv_index_max
         weather_code
       }
-      elevation
-      generationtime_ms
       hourly {
         apparent_temperature
-        dew_point_2m
-        is_day
         precipitation
         precipitation_probability
         rain
@@ -85,8 +76,6 @@ const fetchWeatherQuery = gql`
       }
       hourly_units {
         apparent_temperature
-        dew_point_2m
-        is_day
         precipitation
         precipitation_probability
         rain
@@ -100,6 +89,8 @@ const fetchWeatherQuery = gql`
         uv_index_clear_sky
         wind_gusts_10m
       }
+      elevation
+      generationtime_ms
       latitude
       longitude
       timezone
@@ -108,6 +99,5 @@ const fetchWeatherQuery = gql`
     }
   }
 `;
-
 
 export default fetchWeatherQuery;

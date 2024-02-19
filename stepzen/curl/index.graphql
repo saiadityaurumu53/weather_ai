@@ -1,7 +1,6 @@
 type Current {
   interval: Int
   is_day: Int
-  relative_humidity_2m: Int
   temperature_2m: Float
   time: DateTime
   weather_code: Int
@@ -12,7 +11,6 @@ type Current {
 type CurrentUnits {
   interval: String
   is_day: String
-  relative_humidity_2m: String
   temperature_2m: String
   time: String
   weather_code: String
@@ -48,13 +46,11 @@ type DailyUnits {
 
 type Hourly {
   apparent_temperature: [Float]
-  dew_point_2m: [Float]
-  is_day: [Int]
   precipitation: [Float]
   precipitation_probability: [Int]
   rain: [Float]
   relative_humidity_2m: [Int]
-  showers: [Int]
+  showers: [Float]
   snow_depth: [Int]
   snowfall: [Int]
   temperature_2m: [Float]
@@ -66,8 +62,6 @@ type Hourly {
 
 type HourlyUnits {
   apparent_temperature: String
-  dew_point_2m: String
-  is_day: String
   precipitation: String
   precipitation_probability: String
   rain: String

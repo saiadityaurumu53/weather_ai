@@ -1,24 +1,21 @@
 interface Current {
     interval: number;
     is_day: number;
-    relative_humidity_2m: number;
     temperature_2m: number;
     time: string;
     weather_code: number;
     wind_direction_10m: number;
     wind_speed_10m: number;
-  }
-
+}
 
 interface CurrentUnits {
-  interval: string;
-  is_day: string;
-  relative_humidity_2m: string;
-  temperature_2m: string;
-  time: string;
-  weather_code: string;
-  wind_direction_10m: string;
-  wind_speed_10m: string;
+    interval: string;
+    is_day: string;
+    temperature_2m: string;
+    time: string;
+    weather_code: string;
+    wind_direction_10m: string;
+    wind_speed_10m: string;
 }
 
 interface Daily {
@@ -32,9 +29,9 @@ interface Daily {
     uv_index_clear_sky_max: [number];
     uv_index_max: [number];
     weather_code: [number];
-  }
+}
 
-  interface DailyUnits {
+interface DailyUnits {
     apparent_temperature_max: string;
     apparent_temperature_min: string;
     sunrise: string;
@@ -45,12 +42,10 @@ interface Daily {
     uv_index_clear_sky_max: string;
     uv_index_max: string;
     weather_code: string;
-  }
+}
 
-  interface Hourly {
+interface Hourly {
     apparent_temperature: [number];
-    dew_point_2m: [number];
-    is_day: [number];
     precipitation: [number];
     precipitation_probability: [number];
     rain: [number];
@@ -63,13 +58,10 @@ interface Daily {
     uv_index: [number];
     uv_index_clear_sky: [number];
     wind_gusts_10m: [number];
-  }
+}
 
-
-  interface HourlyUnits {
+interface HourlyUnits {
     apparent_temperature: string;
-    dew_point_2m: string;
-    is_day: string;
     precipitation: string;
     precipitation_probability: string;
     rain: string;
@@ -82,10 +74,9 @@ interface Daily {
     uv_index: string;
     uv_index_clear_sky: string;
     wind_gusts_10m: string;
-  }
+}
 
-
-  interface Root {
+interface Root {
     current: Current;
     current_units: CurrentUnits;
     daily: Daily;
@@ -99,6 +90,4 @@ interface Daily {
     timezone: string;
     timezone_abbreviation: string;
     utc_offset_seconds: number;
-  }
-
-  
+}
