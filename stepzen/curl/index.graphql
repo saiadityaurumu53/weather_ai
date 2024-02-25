@@ -2,7 +2,7 @@ type Current {
   interval: Int
   is_day: Int
   temperature_2m: Float
-  time: DateTime
+  time: String
   weather_code: Int
   wind_direction_10m: Int
   wind_speed_10m: Float
@@ -21,8 +21,8 @@ type CurrentUnits {
 type Daily {
   apparent_temperature_max: [Float]
   apparent_temperature_min: [Float]
-  sunrise: [DateTime]
-  sunset: [DateTime]
+  sunrise: [String]
+  sunset: [String]
   temperature_2m_max: [Float]
   temperature_2m_min: [Float]
   time: [Date]
@@ -54,7 +54,7 @@ type Hourly {
   snow_depth: [Int]
   snowfall: [Int]
   temperature_2m: [Float]
-  time: [DateTime]
+  time: [String]
   uv_index: [Float]
   uv_index_clear_sky: [Float]
   wind_gusts_10m: [Float]
