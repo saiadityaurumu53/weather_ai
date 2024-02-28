@@ -1,7 +1,9 @@
 import CalloutCard from "@/Components/CalloutCard";
 import InformationPanel from "@/Components/InformationPanel";
+import RainChart from "@/Components/RainChart";
 import StatCard from "@/Components/StatCard";
 import TempChart from "@/Components/TempChart";
+import HumidityChart from "@/Components/HumidityChart";
 import { getClient } from "@/apollo-client";
 import fetchWeatherQuery from "@/graphql/queries/fetchWeatherQueries";
 
@@ -107,7 +109,9 @@ async function WeatherPage({params: {city, lat, long}}: Props) {
                   {/* TempChart */}
                   <TempChart results={results} />
                   {/* RainChart */}
+                  <RainChart results={results} />
                   {/* HumidityChart */}
+                  <HumidityChart results={results} />
 
 
 

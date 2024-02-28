@@ -12,5 +12,4 @@ Aim: The main aim of this project is to create a Weather AI enabled app to provi
 
 Note: This is a Live project!
 
-![Screenshot 2024-02-11 213815](https://github.com/saiadityaurumu53/weather_ai/assets/124300817/80d9a9ff-628f-47f1-8211-682fffb6a4a3)
 
