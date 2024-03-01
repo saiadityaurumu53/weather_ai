@@ -12,4 +12,9 @@ Aim: The main aim of this project is to create a Weather AI enabled app to provi
 
 Note: This is a Live project!
 
-
+These include the demo of the created project:
+1. This is the opening page In which we can select the country and the city according to our requirements.
+![alt text](image.png)
+2. After Selecting the Country and the city, it will be directed to a weather information page which consisting of the information panel and the main section as shown in the below.
+![alt text](image-1.png)
+![alt text](image-2.png)
