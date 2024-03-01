@@ -2,7 +2,7 @@
 
 1. Tremor 2.0 for creating the beautiful UI like the dashboard
 2. React.js
-3. Next.js  13.3
+3. Next.js  14.1
 4. StepZen for the GraphQL end point
 5. Taiwind CSS
 6. Typescript
