@@ -7,6 +7,12 @@ import HumidityChart from "@/Components/HumidityChart";
 import { getClient } from "@/apollo-client";
 import fetchWeatherQuery from "@/graphql/queries/fetchWeatherQueries";
 
+
+
+export const revalidate = 60;
+//Now, every 60 seconds it will revalidate the cache.
+//Every 60 seconds it will give the rebuild of the cache page provided someone has visited it.
+
 type Props = {
     params: {
       city: string;
